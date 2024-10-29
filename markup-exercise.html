@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
-  <h1>A Brief History of HTML</h1>
+  <h1 id="my-article-headline">A Brief History of HTML</h1>
   <img src="https://techlearnsacademy.com/instructor/public/uploads/course_image/1717760299.jpg" alt="A digital drawing of HTMl written in yellow on a chalkboard. It is surrounded by words describing the web: workshop, code, CSS, www., design, UX/UI, web page, tag, syntax, SEO, internet, idea, and notepad."></img>
   <br/>
   <p>The history of hypertext markup language is a strange and interesting tale. From its simple start as an online subset of SGML through political maneuverings of the huge browser companies to its current piecemeal – but growing – compatibility, the language has weathered a storm of growth, abuse, and innovation.</p> 
   <p>Recently, the battle for control of the standard has focused on functionality. Microsoft and Netscape are both touting W3C compliance as a crucial marketing advantage. And the work being done on the latest HTML draft shows there may be light at the end of the tunnel.</p>
-  <p>But it wasn't always this rosy The idea behind HTML was a modest one.</p>
+  <p class="special">But it wasn't always this rosy, the idea behind HTML was a modest one.</p>
   <p>When Tim Berners-Lee was putting together his first elementary browsing and authoring system for the Web, he created a quick little hypertext language that would serve his purposes. He imagined dozens, or even hundreds, of hypertext formats in the future, and smart clients that could easily negotiate and translate documents from servers across the Net. It would be a system similar to Claris XTND on the Macintosh, but would work on any platform and browser.The problem, however, turned out to be in the simplicity of Berners-Lee's language. Since it was text-based, you could use any editor or word processor to create or convert documents for the Web. And there was just a handful of tags – anyone could master HTML in an afternoon.</p>
   <p>The Web flourished. Everyone started publishing. The rest is history. But as more and more content moved to the Web, those creating browsers realized the simple markup language needed much improvement.</p>
   <br/>
   <strong>How should the innovation take place?</strong>
   <p>Tim Berners-Lee certainly wasn't going to be the sole developer of HTML – he never intended to be. So the developers, in the long-held tradition of the Internet, implemented new features in their browsers and then shipped them. If the Web community liked them, they stayed. If not, they were removed.</p>
-  <h2>Here's a brief list of deprecated HTML tags:</h2> 
+  <h2 class="headings">Here's a brief list of deprecated HTML tags:</h2> 
   <ul>
     <li>applet</li>
     <li>basefront</li>
@@ -28,4 +28,38 @@
   </ul>
   <p>[In this section we'll test the audio]</p>
 </body>
+
+<style>
+  p {
+    color: red;
+    font-size: 14px;
+    font-family: 'arial';
+    line-height: normal;
+  }
+  li {
+    list-style-type: square;
+  }
+#my-article-headline {
+  color: blue;
+  font-family: 'arial';
+}
+.headings {
+  font-family: 'arial';
+  color: blue;
+}
+li {
+  font-family: 'arial';
+  color: red;
+  font-size: 14px;
+  list-style-position: inside;
+}
+strong {
+  color: red;
+  font-family: 'arial';
+}
+.special {
+  font-style: italic;
+  text-indent: 1.5%;
+}
+</style>
 </html>
